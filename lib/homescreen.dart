@@ -49,7 +49,6 @@ class _HomescreenState extends State<Homescreen> {
 
   @override
   void initState() {
-     
     super.initState();
     inputfactor = units.firstWhere((u) => u.name == inputunit).value;
     outputfactor = units.firstWhere((u) => u.name == outputunit).value;
@@ -170,6 +169,7 @@ class _HomescreenState extends State<Homescreen> {
 class Unit {
   final String name;
   final double value;
+  String? unit;
 
   Unit({required this.name, required this.value});
 }
